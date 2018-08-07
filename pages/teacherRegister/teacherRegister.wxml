@@ -1,0 +1,28 @@
+<view class='container'>
+  <view class='title'>完善个人信息</view>
+  <form>
+    <view class='form-group'>
+      <label>姓名</label>
+      <input class='number' placeholder='**文 (请输入完整姓名)' type='text' placeholder-class="phd-color"></input>
+    </view>
+    <view class='form-group'>
+      <label>学校</label>
+      <picker mode="selector" bindchange="selectSchool" value="{{schoolIndex}}" range="{{schoolArray}}">
+        <view><input disabled class='number' placeholder='请选择学校' value='{{schoolArray[schoolIndex]}}'></input></view>
+      </picker>
+      <icon class="icon-dropDown"></icon>
+    </view>
+    <view class='form-group'>
+      <label>班级</label>
+      <picker mode="selector" bindchange="selectClass" value="{{classIndex}}" range="{{classArray}}">
+        <view><input class='number' disabled placeholder='请选择班级' type='text' value='{{classArray[classIndex]}}'></input></view>
+      </picker>
+      <icon class="icon-dropDown"></icon>
+    </view>
+    <view class='form-group'>
+      <label>手机号</label>
+      <input class='number' placeholder='请输入手机号' type='number' maxlength="11" placeholder-class="phd-color" value='17345679876'></input>
+    </view>
+    <button class='Btn1 mgtb65'>确认</button>
+  </form>
+</view>

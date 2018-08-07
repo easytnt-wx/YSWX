@@ -1,0 +1,20 @@
+<view class='container'>
+  <view class='h1'>
+    <view class='title'>选择角色</view>
+    <text>亦师亦友，友师优评给您最好的选择</text>
+  </view>
+  <view class='person-box'>
+    <view class='icon-teacher'>
+      <view class='h2'>我是老师</view>
+      <text>I am teacher</text>
+    </view>
+    <view class='icon-parent'>
+      <view class='h2'>我是家长</view>
+      <text>I am parent</text>
+    </view>
+    <view class='icon-student'>
+      <view class='h2'>我是学生</view>
+      <text>I am student</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,47 @@
+.title{
+  color: #888;
+  background-color: #f8fcfd;
+  font-size: 14px;
+  line-height: 88rpx;
+  padding-left: 60rpx;
+  border-top: 1px solid #e5e5e5;
+}
+.form-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  line-height: 86rpx;
+}
+.phd-color{
+  color: #c9d1d0;
+}
+.form-group label{
+  color: #3e4b4b;
+  font-weight: 500;
+  font-size: 20px;
+  padding-left: 30rpx;
+}
+.form-group input{
+  font-size: 18px;
+  color: #3e4b4b;
+  width: 480rpx;
+}
+.Btn1{
+  border-radius: 45rpx;
+  margin: 65rpx 30rpx;
+  width: 690rpx;
+  height: 90rpx;
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/Btn1.png");
+  background-color: #fff;
+  background-size: cover;
+  border: none;
+  color: #80eaea;
+}
+.button-hover {
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/Btn1_active.png");
+  background-color: #fff;
+  color: #fff;
+}
