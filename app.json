@@ -1,10 +1,12 @@
 {
   "pages":[
+    "pages/addItem/additem",
+    "pages/report/report",
+    "pages/myself/myself",
     "pages/teacherRegister/teacherRegister",
     "pages/registerMoble/registerMoble",
     "pages/selectRole/selectRole",
     "pages/index/index",
-    
     "pages/logs/logs"
   ],
   "window":{
@@ -12,5 +14,32 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#c8d1ce",
+    "selectedColor": "#1de9b6",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/addItem/additem",
+        "text": "加减项",
+        "iconPath":"images/icon_add.png",
+        "selectedIconPath":"images/icon_add_active.png"
+      },
+      {
+        "pagePath": "pages/report/report",
+        "text": "报告",
+        "iconPath": "images/icon_report.png",
+        "selectedIconPath": "images/icon_report_active.png"
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "text": "我的",
+        "iconPath": "images/icon_me.png",
+        "selectedIconPath": "images/icon_me_active.png"
+      }
+    ]
   }
 }
