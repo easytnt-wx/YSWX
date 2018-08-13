@@ -21,7 +21,7 @@
     </view>
     <view class='form-group'>
       <label>手机号</label>
-      <input class='number' placeholder='请输入手机号' type='number' maxlength="11" placeholder-class="phd-color" value='17345679876'></input>
+      <input class='number' placeholder='请输入手机号' type='number' maxlength="11" placeholder-class="phd-color" value=''></input>
     </view>
     <button class='Btn1 mgtb65'>确认</button>
   </form>
