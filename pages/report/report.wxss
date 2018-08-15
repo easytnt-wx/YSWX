@@ -1,0 +1,22 @@
+page{
+  background-color: #f9fcfc;
+}
+
+.nodata{
+  margin-top: 110rpx;
+  padding: 0 76rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nodata.dis_none{
+  display: none;
+}
+.nodata > image{
+  width: 600rpx;
+  height: 400rpx;
+}
+.nodata text{
+  font-size: 18px;
+  color: #b3b5b4;
+}

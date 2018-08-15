@@ -1,5 +1,9 @@
 {
   "pages":[
+    "pages/parentSelf/setting/setting",
+    "pages/parentSelf/parentSelf",
+    "pages/myself/setting/setting",
+    "pages/myself/about/about",
     "pages/addItem/additem",
     "pages/report/report",
     "pages/myself/myself",

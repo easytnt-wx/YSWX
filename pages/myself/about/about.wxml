@@ -1,0 +1,18 @@
+<view class='container'>
+  <view class='header'>
+    <view><image src='http://192.168.1.252/public/static/easy_exam/YSWX/images/logo.png'></image></view>
+    <text>友师优评YUI1.0</text>
+  </view>
+  <view class='list'>
+      <view class='list-item'>
+        <view>
+          <text>服务条款</text>
+        </view>
+        <icon class='icon_right'></icon>
+      </view>
+  </view>
+  <view class='foot-info'>
+    <view class='company'>深圳市友师优评科技有限公司 版权所有</view>
+    <view class='years'>copyight 2018</view>
+  </view>
+</view>

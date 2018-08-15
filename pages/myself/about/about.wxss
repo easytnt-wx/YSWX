@@ -1,28 +1,42 @@
-.userInfo{
-  width: 100%;
-  height: 564rpx;
-  background-color: #fff;
-  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_userBackgroud.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+page{
+  background-color: #f8fcfd;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.header{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 420rpx;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+  margin-bottom: 20rpx;
 }
-.userInfo image{
+.header > view{
   width: 200rpx;
   height: 200rpx;
-  margin-top: 120rpx;
-  margin-bottom: 30rpx;
+  background-color: #fff;
+  border-radius: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 50rpx 5rpx #eee;
+  margin-bottom: 40rpx;
 }
-.teacherName{
-  color: #fff;
-  font-size: 22px;
-  margin-bottom: 16rpx;
+.header > view > image{
+  width: 140rpx;
+  height: 140rpx;
 }
-.className{
-  color: #fff;
-  font-size: 16px;
+.header > text{
+  color: #3e4b4b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 .list{
   display: flex;
@@ -52,7 +66,7 @@
   align-items: center;
   justify-content: space-between;
   line-height: 112rpx;
-  margin-left: 20rpx;
+  margin-left: 30rpx;
   position: relative;
 }
 .list-item::before{
@@ -74,16 +88,28 @@
   color: #3e4b4b;
   font-size: 18px;
 }
-.icon{
-  width: 72rpx;
-  height: 72rpx;
-  border-radius: 50%;
-  margin-right: 20rpx;
-}
 .icon_right{
   width: 25rpx;
   height: 25rpx;
   background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_right.png");
   background-size: cover;
   margin-right: 30rpx;
+}
+.foot-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex: auto;
+}
+.foot-info view{
+  color: #C9D1D0;
+  font-size: 14px;
+  line-height: 30rpx;
+}
+.company{
+  margin-bottom: 30rpx;
+}
+.years{
+  margin-bottom: 60rpx;
 }

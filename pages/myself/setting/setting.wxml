@@ -1,0 +1,39 @@
+<view class='container'>
+  <view class='list'>
+    <view class='list-item'>
+      <view>
+        <text>个人信息</text>
+      </view>
+      <icon class='icon_right'></icon>
+    </view>
+    <view class='list-item'>
+      <view>
+        <text>密码重置</text>
+      </view>
+      <icon class='icon_right'></icon>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='list-item'>
+      <view>
+        <text>新消息提醒</text>
+      </view>
+      <icon class='icon_right'></icon>
+    </view>
+    <view class='list-item'>
+      <view>
+        <text>聊天字体大小</text>
+      </view>
+      <icon class='icon_right'></icon>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='list-item'>
+      <view>
+        <text>切换为家长身份</text>
+      </view>
+      <icon class='icon_right'></icon>
+    </view>
+  </view>
+  <view class='logout'>退出登录</view>
+</view>

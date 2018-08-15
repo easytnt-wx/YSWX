@@ -1,50 +1,54 @@
-.userInfo{
-  width: 100%;
-  height: 564rpx;
-  background-color: #fff;
-  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_userBackgroud.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+page{
+  background-color: #f8fcfd;
 }
-.userInfo image{
-  width: 200rpx;
-  height: 200rpx;
-  margin-top: 120rpx;
-  margin-bottom: 30rpx;
-}
-.teacherName{
-  color: #fff;
-  font-size: 22px;
-  margin-bottom: 16rpx;
-}
-.className{
-  color: #fff;
-  font-size: 16px;
+.container{
+  margin-top: 20rpx;
 }
 .list{
   display: flex;
   flex-direction: column;
   position: relative;
   background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.list2{
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  height: 144rpx;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+  margin-bottom: 20rpx;
+}
+.info{
+  margin-left: 20rpx;
+}
+.parentName{
+  color: #3e4b4b;
+  font-size: 18px;
+  line-height: 33rpx;
+}
+.childName{
+  color: #999;
+  font-size: 14px;
+  line-height: 24rpx;
 }
 .list::before,.list::after{
   content: " ";
   position: absolute;
   left: 0;
   right: 0;
-  height: 1px;
+  height: 1rpx;
   color: #e5e5e5;
   z-index: 2;
 }
 .list::before{
-  border-top: 1px solid #e5e5e5;
+  border-top: 1rpx solid #e5e5e5;
   top: 0;
 }
 .list::after{
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
   bottom: 0;
 }
 .list-item{
@@ -62,7 +66,7 @@
   top: 0;
   right: 0;
   height: 1px;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1rpx solid #e5e5e5;
   color: #e5e5e5;
   z-index: 2;
 }

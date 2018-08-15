@@ -1,0 +1,41 @@
+<view class='container'>
+  <view class='list'>
+    <view class='list-item'>
+      <view>
+        <text>账号</text>
+      </view>
+      <view>
+        <text class='account'>13502021212</text>
+      </view>
+    </view>
+    <view class='list-item'>
+      <view>
+        <text>名字</text>
+      </view>
+      <view>
+        <text class='dd'>杨小乐</text>
+        <icon class='icon_right'></icon>
+      </view>
+    </view>
+    <view class='list-item'>
+      <view>
+        <text>所在区域</text>
+      </view>
+      <view class='select'>
+        <picker mode="selector" bindchange="selectregion" value="{{regionIndex}}" range="{{regionArray}}">
+          <view><input disabled class='number' placeholder='请选择学校' value='{{regionArray[regionIndex]}}'></input></view>
+        </picker>
+        <icon class='icon_right'></icon>
+      </view>
+    </view>
+    <view class='list-item'>
+      <view>
+        <text>绑定微信号</text>
+      </view>
+      <view>
+        <text class='dd'>已绑定</text>
+        <icon class='icon_right'></icon>
+      </view>
+    </view>
+  </view>
+</view>

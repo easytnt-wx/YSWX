@@ -1,8 +1,10 @@
-<view>
-  <view class='userInfo'>
-    <image src='http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_teacher.png'></image>
-    <view class='teacherName'>熊老师</view>
-    <view class='className'>华师中学七年级二班</view>
+<view class='container'>
+  <view class='list2'>
+    <view class='info'>
+      <view class='parentName'>杨小乐</view>
+      <text class='childName'>贝贝家长</text>
+    </view>
+    <icon class='icon_right'></icon>
   </view>
   <view class='list'>
     <view class='list-item'>
