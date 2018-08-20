@@ -1,0 +1,135 @@
+page,swiper{
+  height:100%;
+}
+.swiper-tab{
+    width: 100%;
+    border-bottom: 1rpx solid #e5e5e5;
+    text-align: center;
+    height: 100rpx;
+    line-height: 100rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.swiper-tab-item{
+    width: 30%; 
+    color:#c9d1d0;
+    font-size: 18px;
+}
+.active{
+    color:#3e4b4b;
+    border-bottom: 4rpx solid #01e6ad;
+}
+.grades{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 25rpx;
+  margin-left: 40rpx;
+}
+.grade-item{
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 40rpx 40rpx 0;
+}
+.item-box{
+  border-radius: 20rpx;
+  box-shadow: 2rpx 4rpx 40rpx 4rpx #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-active{
+   box-shadow: 2rpx 4rpx 20rpx 4rpx #ddd;
+}
+.item-logo1{
+  width: 130rpx;
+  height: 130rpx;
+  margin-top: 40rpx;
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_appearance.png");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+.item-active .item-logo1{
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_appearance_active.png");
+}
+.item-logo2{
+  width: 130rpx;
+  height: 130rpx;
+  margin-top: 40rpx;
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_concentrate.png");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+.item-active .item-logo2{
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_concentrate_active.png");
+}
+.item-logo3{
+  width: 130rpx;
+  height: 130rpx;
+  margin-top: 40rpx;
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_observe.png");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+.item-active .item-logo3{
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_observe_active.png");
+}
+.item-logo4{
+  width: 130rpx;
+  height: 130rpx;
+  margin-top: 40rpx;
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_headUp.png");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+.item-active .item-logo4{
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_headUp_active.png");
+}
+.item-logo5{
+  width: 130rpx;
+  height: 130rpx;
+  margin-top: 40rpx;
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_team.png");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+.item-active .item-logo5{
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_team_active.png");
+}
+.item-logo6{
+  width: 130rpx;
+  height: 130rpx;
+  margin-top: 40rpx;
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_edit.png");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+.item-active .item-logo6{
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_edit_active.png");
+}
+.icon-badag{
+  width: 45rpx;
+  height: 45rpx;
+  background-color: #f43530;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 45rpx;
+  text-align: center;
+  font-size: 14px;
+}
+.item-active .icon-badag{
+  background-color: #f2716d;
+}
+.item-text{
+  font-size: 18px;
+  color: #3e4b4b;
+  margin: 40rpx 0 32rpx 0;
+}

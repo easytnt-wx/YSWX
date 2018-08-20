@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/addItem/giveTab/giveTab",
     "pages/parentSelf/setting/setting",
     "pages/parentSelf/parentSelf",
     "pages/myself/setting/setting",
