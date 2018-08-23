@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/report/scoreTopList/scoreTopList",
     "pages/addItem/giveTab/giveTab",
     "pages/parentSelf/setting/setting",
     "pages/parentSelf/parentSelf",

@@ -1,0 +1,133 @@
+<view class='container'>
+  <view class='bg bg{{currentTab}}'>
+    <view class='bg-h1'>学习排行榜</view>
+    <text wx:if="{{currentTab == 0}}" class='bg-p'>学贵得师,亦贵得友。</text>
+    <text wx:elif="{{currentTab == 1}}" class='bg-p'>读万卷书,下笔如有神。</text>
+  </view>
+  <view class="swiper-tab">
+      <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">总分排行</view>
+      <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">进步排行</view>
+  </view>
+  <view class='swiper-container'>
+    <swiper current="{{currentTab}}" duration="300"  bindchange="swiperTab">
+        <swiper-item >
+          <view class='list'>
+            <view class='list-item'>
+              <view>
+                <view class='scoreTop'>1</view>
+                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_1.png'></image>
+                <view class='user-name'>Anna</view>
+              </view>
+              <view>
+                <view class='icon-up'></view>
+                <view class='score'>100</view>
+              </view>
+            </view>
+            <view class='list-item'>
+              <view>
+                <view class='scoreTop'>2</view>
+                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_2.png'></image>
+                <view class='user-name'>Anna</view>
+              </view>
+              <view>
+                <view class='icon-down'></view>
+                <view class='score'>100</view>
+              </view>
+            </view>
+            <view class='list-item'>
+              <view>
+                <view class='scoreTop'>3</view>
+                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_3.png'></image>
+                <view class='user-name'>Anna</view>
+              </view>
+              <view>
+                <view class='icon-default'></view>
+                <view class='score'>100</view>
+              </view>
+            </view>
+            <view class='list-item'>
+              <view>
+                <view class='scoreTop'>4</view>
+                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_default.png'></image>
+                <view class='user-name'>Anna</view>
+              </view>
+              <view>
+                <view class='icon-down'></view>
+                <view class='score'>100</view>
+              </view>
+            </view>
+            <view class='list-item'>
+              <view>
+                <view class='scoreTop'>5</view>
+                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_default.png'></image>
+                <view class='user-name'>Anna</view>
+              </view>
+              <view>
+                <view class='icon-up'></view>
+                <view class='score'>100</view>
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+        <swiper-item >
+          <view class='list'>
+            <view class='list-item'>
+              <view>
+                <view class='scoreTop'>1</view>
+                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_1.png'></image>
+                <view class='user-name'>Anna</view>
+              </view>
+              <view>
+                <view class='icon-up'></view>
+                <view class='score'>100</view>
+              </view>
+            </view>
+            <view class='list-item'>
+              <view>
+                <view class='scoreTop'>2</view>
+                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_2.png'></image>
+                <view class='user-name'>Anna</view>
+              </view>
+              <view>
+                <view class='icon-down'></view>
+                <view class='score'>100</view>
+              </view>
+            </view>
+            <view class='list-item'>
+              <view>
+                <view class='scoreTop'>3</view>
+                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_3.png'></image>
+                <view class='user-name'>Anna</view>
+              </view>
+              <view>
+                <view class='icon-default'></view>
+                <view class='score'>100</view>
+              </view>
+            </view>
+            <view class='list-item'>
+              <view>
+                <view class='scoreTop'>4</view>
+                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_default.png'></image>
+                <view class='user-name'>Anna</view>
+              </view>
+              <view>
+                <view class='icon-down'></view>
+                <view class='score'>100</view>
+              </view>
+            </view>
+            <view class='list-item'>
+              <view>
+                <view class='scoreTop'>5</view>
+                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_default.png'></image>
+                <view class='user-name'>Anna</view>
+              </view>
+              <view>
+                <view class='icon-up'></view>
+                <view class='score'>100</view>
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+    </swiper>
+  </view>
+</view>

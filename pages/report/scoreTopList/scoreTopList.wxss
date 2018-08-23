@@ -1,0 +1,145 @@
+.container,page{
+  height: 100%;
+  width: 100%;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.bg{
+  width: 100%;
+  height: 346rpx;
+  background-size: cover;
+  background-color: #1de9b6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 65rpx;
+}
+.bg0{
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/scoreTop_1.png");
+}
+.bg1{
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/scoreTop_2.png");
+}
+.bg-h1{
+  font-size: 24px;
+  color: #fff;
+  line-height: 55rpx;
+  margin-bottom: 20rpx;
+}
+.bg-p{
+  font-size: 14px;
+  color: #fff;
+}
+.swiper-tab{
+  width: 100%;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  flex-flow: row;
+  background-color: #37b8cd;
+}
+.swiper-tab-item{
+  width: 50%; 
+  color:#bde2f4;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.active{
+  color:#fff;
+}
+.active::after{
+  content: "";
+  border-width: 20rpx;
+  border-style: solid;
+  border-color: transparent transparent #fff;
+  margin-top: -40rpx;
+}
+.swiper-container{
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+}
+swiper{
+  height: 760rpx;
+}
+.list-item{
+  height: 112rpx;
+  line-height: 112rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.list-item > view{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.scoreTop{
+  margin: 0 30rpx 0 30rpx;
+  font-size: 14px;
+  color: #999;
+  width: 48rpx;
+  height: 96rpx;
+  text-align: center;
+}
+.list-item:nth-child(1) .scoreTop{
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_No1.png");
+  background-size: cover;
+  color: transparent;
+}
+.list-item:nth-child(2) .scoreTop{
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_No2.png");
+  background-size: cover;
+  color: transparent;
+}
+.list-item:nth-child(3) .scoreTop{
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_No3.png");
+  background-size: cover;
+  color: transparent;
+}
+
+.user-icon{
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.user-name{
+  color: #3e4b4b;
+  font-size: 18px;
+}
+.score{
+  margin-right: 40rpx;
+  margin-left: 30rpx;
+  color: #999;
+  font-size: 14px;
+}
+.icon-default{
+  width: 24rpx;
+  height: 24rpx;
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_default.png");
+  background-size: cover;
+  background-position: center;
+}
+.icon-up{
+  width: 24rpx;
+  height: 24rpx;
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_up.png");
+  background-size: cover;
+  background-position: center;
+}
+.icon-down{
+  width: 24rpx;
+  height: 24rpx;
+  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_down.png");
+  background-size: cover;
+  background-position: center;
+}
