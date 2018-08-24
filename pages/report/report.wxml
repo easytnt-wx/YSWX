@@ -1,6 +1,6 @@
 <view class='container'>
   <view class='nodata'>
-    <image src='http://192.168.1.252/public/static/easy_exam/YSWX/images/none.png'></image>
+    <image src='http://119.23.55.117/public/static/YSWX/images/none.png'></image>
     <text>没有更多了</text>
   </view>
 </view>

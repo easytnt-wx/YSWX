@@ -15,7 +15,7 @@
             <view class='list-item'>
               <view>
                 <view class='scoreTop'>1</view>
-                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_1.png'></image>
+                <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_1.png'></image>
                 <view class='user-name'>Anna</view>
               </view>
               <view>
@@ -26,7 +26,7 @@
             <view class='list-item'>
               <view>
                 <view class='scoreTop'>2</view>
-                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_2.png'></image>
+                <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_2.png'></image>
                 <view class='user-name'>Anna</view>
               </view>
               <view>
@@ -37,7 +37,7 @@
             <view class='list-item'>
               <view>
                 <view class='scoreTop'>3</view>
-                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_3.png'></image>
+                <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_3.png'></image>
                 <view class='user-name'>Anna</view>
               </view>
               <view>
@@ -48,7 +48,7 @@
             <view class='list-item'>
               <view>
                 <view class='scoreTop'>4</view>
-                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_default.png'></image>
+                <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
                 <view class='user-name'>Anna</view>
               </view>
               <view>
@@ -59,7 +59,7 @@
             <view class='list-item'>
               <view>
                 <view class='scoreTop'>5</view>
-                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_default.png'></image>
+                <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
                 <view class='user-name'>Anna</view>
               </view>
               <view>
@@ -74,7 +74,7 @@
             <view class='list-item'>
               <view>
                 <view class='scoreTop'>1</view>
-                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_1.png'></image>
+                <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_1.png'></image>
                 <view class='user-name'>Anna</view>
               </view>
               <view>
@@ -85,7 +85,7 @@
             <view class='list-item'>
               <view>
                 <view class='scoreTop'>2</view>
-                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_2.png'></image>
+                <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_2.png'></image>
                 <view class='user-name'>Anna</view>
               </view>
               <view>
@@ -96,7 +96,7 @@
             <view class='list-item'>
               <view>
                 <view class='scoreTop'>3</view>
-                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_3.png'></image>
+                <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_3.png'></image>
                 <view class='user-name'>Anna</view>
               </view>
               <view>
@@ -107,7 +107,7 @@
             <view class='list-item'>
               <view>
                 <view class='scoreTop'>4</view>
-                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_default.png'></image>
+                <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
                 <view class='user-name'>Anna</view>
               </view>
               <view>
@@ -118,7 +118,7 @@
             <view class='list-item'>
               <view>
                 <view class='scoreTop'>5</view>
-                <image class='user-icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/stu_default.png'></image>
+                <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
                 <view class='user-name'>Anna</view>
               </view>
               <view>

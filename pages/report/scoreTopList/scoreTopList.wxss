@@ -18,10 +18,10 @@
   padding-left: 65rpx;
 }
 .bg0{
-  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/scoreTop_1.png");
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/scoreTop_1.png");
 }
 .bg1{
-  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/scoreTop_2.png");
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/scoreTop_2.png");
 }
 .bg-h1{
   font-size: 24px;
@@ -91,17 +91,17 @@ swiper{
   text-align: center;
 }
 .list-item:nth-child(1) .scoreTop{
-  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_No1.png");
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_No1.png");
   background-size: cover;
   color: transparent;
 }
 .list-item:nth-child(2) .scoreTop{
-  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_No2.png");
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_No2.png");
   background-size: cover;
   color: transparent;
 }
 .list-item:nth-child(3) .scoreTop{
-  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_No3.png");
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_No3.png");
   background-size: cover;
   color: transparent;
 }
@@ -125,21 +125,21 @@ swiper{
 .icon-default{
   width: 24rpx;
   height: 24rpx;
-  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_default.png");
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_default.png");
   background-size: cover;
   background-position: center;
 }
 .icon-up{
   width: 24rpx;
   height: 24rpx;
-  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_up.png");
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_up.png");
   background-size: cover;
   background-position: center;
 }
 .icon-down{
   width: 24rpx;
   height: 24rpx;
-  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_down.png");
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_down.png");
   background-size: cover;
   background-position: center;
 }

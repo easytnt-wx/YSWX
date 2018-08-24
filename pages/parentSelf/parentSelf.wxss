@@ -87,7 +87,7 @@ page{
 .icon_right{
   width: 25rpx;
   height: 25rpx;
-  background-image: url("http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_right.png");
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_right.png");
   background-size: cover;
   margin-right: 30rpx;
 }

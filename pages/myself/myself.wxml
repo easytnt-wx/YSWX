@@ -1,20 +1,20 @@
 <view>
   <view class='userInfo'>
-    <image src='http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_teacher.png'></image>
+    <image src='http://119.23.55.117/public/static/YSWX/images/icon_teacher.png'></image>
     <view class='teacherName'>熊老师</view>
     <view class='className'>华师中学七年级二班</view>
   </view>
   <view class='list'>
     <view class='list-item'>
       <view>
-        <image class='icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_about.png'></image>
+        <image class='icon' src='http://119.23.55.117/public/static/YSWX/images/icon_about.png'></image>
         <text>关于友师优评</text>
       </view>
       <icon class='icon_right'></icon>
     </view>
     <view class='list-item'>
       <view>
-        <image class='icon' src='http://192.168.1.252/public/static/easy_exam/YSWX/images/icon_setting.png'></image>
+        <image class='icon' src='http://119.23.55.117/public/static/YSWX/images/icon_setting.png'></image>
         <text>设置</text>
       </view>
       <icon class='icon_right'></icon>

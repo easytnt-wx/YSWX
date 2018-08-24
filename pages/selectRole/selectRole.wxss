@@ -27,7 +27,7 @@
 }
 .icon-teacher{
   height: 230rpx;
-  background-image: url(http://192.168.1.252/public/static/easy_exam/YSWX/images/teacher.png);
+  background-image: url(http://119.23.55.117/public/static/YSWX/images/teacher.png);
   background-size: cover;
   background-color: #fff;
   border-radius: 8px;
@@ -37,7 +37,7 @@
 }
 .icon-parent{
   height: 230rpx;
-  background-image: url(http://192.168.1.252/public/static/easy_exam/YSWX/images/parents.png);
+  background-image: url(http://119.23.55.117/public/static/YSWX/images/parents.png);
   background-size: cover;
   background-color: #fff;
   border-radius: 8px;
@@ -47,7 +47,7 @@
 }
 .icon-student{
   height: 230rpx;
-  background-image: url(http://192.168.1.252/public/static/easy_exam/YSWX/images/student.png);
+  background-image: url(http://119.23.55.117/public/static/YSWX/images/student.png);
   background-size: cover;
   background-color: #fff;
   border-radius: 8px;
