@@ -10,7 +10,7 @@
 <swiper current="{{currentTab}}" duration="100"  bindchange="swiperTab">
     <swiper-item >
       <view class='list'>
-        <view class='list-item' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl'>
           <view>
             <view class='scoreTop'>1</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_1.png'></image>
@@ -21,7 +21,7 @@
             <view class='score'>100</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl'>
           <view>
             <view class='scoreTop'>2</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_2.png'></image>
@@ -32,7 +32,7 @@
             <view class='score'>100</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl'>
           <view>
             <view class='scoreTop'>3</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_3.png'></image>
@@ -43,7 +43,7 @@
             <view class='score'>100</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl'>
           <view>
             <view class='scoreTop'>4</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
@@ -54,7 +54,7 @@
             <view class='score'>100</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl'>
           <view>
             <view class='scoreTop'>5</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
@@ -65,7 +65,7 @@
             <view class='score'>100</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl'>
           <view>
             <view class='scoreTop'>6</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
@@ -76,7 +76,7 @@
             <view class='score'>100</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl'>
           <view>
             <view class='scoreTop'>7</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
@@ -87,7 +87,7 @@
             <view class='score'>100</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl'>
           <view>
             <view class='scoreTop'>8</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
@@ -98,7 +98,7 @@
             <view class='score'>100</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl'>
           <view>
             <view class='scoreTop'>9</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
@@ -109,7 +109,7 @@
             <view class='score'>100</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl' hover-class='list-item-hover'>
           <view>
             <view class='scoreTop'>10</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
@@ -124,7 +124,7 @@
     </swiper-item>
     <swiper-item >
       <view class='list'>
-        <view class='list-item' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl'>
           <view>
             <view class='scoreTop'>1</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_1.png'></image>
@@ -135,7 +135,7 @@
             <view class='score'>23</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl'>
           <view>
             <view class='scoreTop'>2</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_2.png'></image>
@@ -146,7 +146,7 @@
             <view class='score'>20</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl'>
           <view>
             <view class='scoreTop'>3</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_3.png'></image>
@@ -157,7 +157,7 @@
             <view class='score'>18</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl'>
           <view>
             <view class='scoreTop'>4</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
@@ -168,7 +168,7 @@
             <view class='score'>14</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl' hover-class='list-item-hover'>
           <view>
             <view class='scoreTop'>5</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
@@ -179,7 +179,7 @@
             <view class='score'>11</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl' hover-class='list-item-hover'>
           <view>
             <view class='scoreTop'>6</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
@@ -190,7 +190,7 @@
             <view class='score'>10</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl' hover-class='list-item-hover'>
           <view>
             <view class='scoreTop'>7</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
@@ -201,7 +201,7 @@
             <view class='score'>7</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl' hover-class='list-item-hover'>
           <view>
             <view class='scoreTop'>8</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
@@ -212,7 +212,7 @@
             <view class='score'>5</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl' hover-class='list-item-hover'>
           <view>
             <view class='scoreTop'>9</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
@@ -223,7 +223,7 @@
             <view class='score'>3</view>
           </view>
         </view>
-        <view class='list-item' hover-class='list-item-hover' hover-class='list-item-hover'>
+        <view class='list-item' hover-class='list-item-hover' catchtap='toUrl' hover-class='list-item-hover'>
           <view>
             <view class='scoreTop'>10</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>

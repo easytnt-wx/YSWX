@@ -4,7 +4,7 @@
     <text>亦师亦友，友师优评给您最好的选择</text>
   </view>
   <view class='person-box'>
-    <view class='icon-teacher'>
+    <view class='icon-teacher' catchtap='toUrl'>
       <view class='h2'>我是老师</view>
       <text>I am teacher</text>
     </view>

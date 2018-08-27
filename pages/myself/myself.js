@@ -7,6 +7,16 @@ Page({
   data: {
   
   },
+  toUrl:function(e){
+    wx.navigateTo({
+      url: 'about/about',
+    })
+  },
+  toUrl2: function (e) {
+    wx.navigateTo({
+      url: 'setting/setting',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

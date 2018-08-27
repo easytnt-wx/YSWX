@@ -11,9 +11,9 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.2.2",
-	"appid": "wxdabccb5b9770bc18",
-	"projectname": "YSweixin",
+	"libVersion": "2.2.4",
+	"appid": "wxc5887091277925d4",
+	"projectname": "YSweixin_alpha",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

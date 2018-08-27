@@ -2,15 +2,15 @@
   <view>
     <view class='indexTitle'>A</view>
     <view class='list'>
-      <view class='userInfo'>
+      <view class='userInfo' catchtap='toUrl'>
         <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_1.png'></image>
         <text>Anna</text>
       </view>
-      <view class='userInfo'>
+      <view class='userInfo' catchtap='toUrl'>
         <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_2.png'></image>
         <text>Anny</text>
       </view>
-      <view class='userInfo'>
+      <view class='userInfo' catchtap='toUrl'>
         <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_3.png'></image>
         <text>Anha</text>
       </view>
@@ -19,15 +19,15 @@
   <view>
     <view class='indexTitle'>B</view>
     <view class='list'>
-      <view class='userInfo'>
+      <view class='userInfo' catchtap='toUrl'>
         <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_4.png'></image>
         <text>Bnna</text>
       </view>
-      <view class='userInfo'>
+      <view class='userInfo' catchtap='toUrl'>
         <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_5.png'></image>
         <text>Bnny</text>
       </view>
-      <view class='userInfo'>
+      <view class='userInfo' catchtap='toUrl'>
         <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_6.png'></image>
         <text>Bobo</text>
       </view>
@@ -36,15 +36,15 @@
   <view>
     <view class='indexTitle'>C</view>
     <view class='list'>
-      <view class='userInfo'>
+      <view class='userInfo' catchtap='toUrl'>
         <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_7.png'></image>
         <text>Cnna</text>
       </view>
-      <view class='userInfo'>
+      <view class='userInfo' catchtap='toUrl'>
         <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_8.png'></image>
         <text>Cnny</text>
       </view>
-      <view class='userInfo'>
+      <view class='userInfo' catchtap='toUrl'>
         <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_4.png'></image>
         <text>Cyry</text>
       </view>
@@ -53,15 +53,15 @@
   <view>
     <view class='indexTitle'>D</view>
     <view class='list'>
-      <view class='userInfo'>
+      <view class='userInfo' catchtap='toUrl'>
         <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_3.png'></image>
         <text>Dnna</text>
       </view>
-      <view class='userInfo'>
+      <view class='userInfo' catchtap='toUrl'>
         <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_2.png'></image>
         <text>Dnny</text>
       </view>
-      <view class='userInfo'>
+      <view class='userInfo' catchtap='toUrl'>
         <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_1.png'></image>
         <text>Dark</text>
       </view>

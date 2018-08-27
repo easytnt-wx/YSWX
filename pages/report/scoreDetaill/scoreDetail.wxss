@@ -1,0 +1,46 @@
+.list-item{
+  border-bottom: 1rpx solid #e5e5e5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 110rpx;
+  line-height: 110rpx;
+  background-color: #fff;
+}
+.list-item-hover{
+  background-color: #ffe9c7;
+}
+.list-item > view{
+  display: flex;
+  align-items: center;
+}
+.ring{
+  width: 36rpx;
+  height: 36rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  background-size: cover;
+}
+.ring-red{
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_ring_red.png");
+}
+.ring-green{
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_ring_green.png");
+}
+.ring-purple{
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_ring_purple.png");
+}
+.scroeName{
+  font-size: 18px;
+  color: #3e4b4b;
+  margin-right: 50rpx;
+}
+.score{
+  color: #f44236;
+  font-size: 14px;
+}
+.date{
+  color: #999;
+  font-size: 14px;
+  margin-right: 30rpx;
+}

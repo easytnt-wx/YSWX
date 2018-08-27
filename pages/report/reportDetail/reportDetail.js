@@ -1,4 +1,4 @@
-// pages/registerMoble/registerMoble.js
+// pages/report/reportDetail/reportDetail.js
 Page({
 
   /**
@@ -6,11 +6,6 @@ Page({
    */
   data: {
   
-  },
-  toUrl : function(e){
-    wx.navigateTo({
-      url: '../teacherRegister/teacherRegister',
-    })
   },
 
   /**

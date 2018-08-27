@@ -1,0 +1,66 @@
+<view class='contaierList'>
+  <view class='list-item' hover-class='list-item-hover'>
+    <view>
+      <view class='ring ring-red'></view>
+      <view class='scroeName'>仪容仪表</view>
+      <view class='score'>+1</view>
+    </view>
+    <view class='date'>20180706</view>
+  </view>
+  <view class='list-item' hover-class='list-item-hover'>
+    <view>
+      <view class='ring ring-purple'></view>
+      <view class='scroeName'>作业态度</view>
+      <view class='score'>+4</view>
+    </view>
+    <view class='date'>20180706</view>
+  </view>
+  <view class='list-item' hover-class='list-item-hover'>
+    <view>
+      <view class='ring ring-green'></view>
+      <view class='scroeName'>课堂表现</view>
+      <view class='score'>+7</view>
+    </view>
+    <view class='date'>20180706</view>
+  </view>
+  <view class='list-item' hover-class='list-item-hover'>
+    <view>
+      <view class='ring ring-red'></view>
+      <view class='scroeName'>考试成绩</view>
+      <view class='score'>-1</view>
+    </view>
+    <view class='date'>20180706</view>
+  </view>
+  <view class='list-item' hover-class='list-item-hover'>
+    <view>
+      <view class='ring ring-purple'></view>
+      <view class='scroeName'>体育表现</view>
+      <view class='score'>+1</view>
+    </view>
+    <view class='date'>20180706</view>
+  </view>
+  <view class='list-item' hover-class='list-item-hover'>
+    <view>
+      <view class='ring ring-green'></view>
+      <view class='scroeName'>艺术表现</view>
+      <view class='score'>+3</view>
+    </view>
+    <view class='date'>20180706</view>
+  </view>
+  <view class='list-item' hover-class='list-item-hover'>
+    <view>
+      <view class='ring ring-purple'></view>
+      <view class='scroeName'>课外实践</view>
+      <view class='score'>-1</view>
+    </view>
+    <view class='date'>20180706</view>
+  </view>
+  <view class='list-item' hover-class='list-item-hover'>
+    <view>
+      <view class='ring ring-green'></view>
+      <view class='scroeName'>乐于助人</view>
+      <view class='score'>+11</view>
+    </view>
+    <view class='date'>20180706</view>
+  </view>
+</view>

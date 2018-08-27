@@ -56,9 +56,56 @@
         </view>
       </view>
     </swiper-item>
-    <swiper-item >
-      <view>
-        2
+    <swiper-item>
+      <view class='grades'>
+        <view class='grade-item'>
+          <view class='item-box' hover-class="item-active">
+            <view class='item-logo1'>
+              <view class='icon-badag'>-1</view>
+            </view>
+            <view class='item-text'>仪容仪表</view>
+          </view>
+        </view>
+        <view class='grade-item'>
+         <view class='item-box' hover-class="item-active">
+            <view class='item-logo2'>
+              <view class='icon-badag'>-6</view>
+            </view>
+            <view class='item-text'>注意力集中</view>
+          </view>
+        </view>
+        <view class='grade-item'>
+         <view class='item-box' hover-class="item-active">
+            <view class='item-logo3'>
+              <view class='icon-badag'>-8</view>
+            </view>
+            <view class='item-text'>遵守纪律</view>
+          </view>
+        </view>
+        <view class='grade-item'>
+          <view class='item-box' hover-class="item-active">
+            <view class='item-logo4'>
+              <view class='icon-badag'>-1</view>
+            </view>
+            <view class='item-text'>举手答问</view>
+          </view>
+        </view>
+        <view class='grade-item'>
+          <view class='item-box' hover-class="item-active">
+            <view class='item-logo5'>
+              <view class='icon-badag'>-9</view>
+            </view>
+            <view class='item-text'>团队合作</view>
+          </view>
+        </view>
+        <view class='grade-item'>
+          <view class='item-box' hover-class="item-active">
+            <view class='item-logo6'>
+              <view class='icon-badag'>-3</view>
+            </view>
+            <view class='item-text'>编辑</view>
+          </view>
+        </view>
       </view>
     </swiper-item>
     <swiper-item >

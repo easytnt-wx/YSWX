@@ -1,5 +1,8 @@
 <view class='container'>
-  <swiper class='swiper-box' indicator-dots='true' indicator-active-color="#1DBBFC" indicator-color='#A6B0BC'>
+  <swiper duration="200" class='swiper-box' indicator-dots='true' indicator-active-color="#1DBBFC" indicator-color='#A6B0BC'>
+    <swiper-item class="img-item">
+      <image class='cover' src='http://119.23.55.117/public/static/YSWX/images/introduce.jpg'></image>
+    </swiper-item>
     <swiper-item class="img-item">
       <image src='http://119.23.55.117/public/static/YSWX/images/introduce1.png'></image>
       <view class='info'>
@@ -20,6 +23,10 @@
         <view class='title'>交流反馈</view>
         <text>了解孩子成长的一切，并及时的参与其中！</text>
       </view>
+    </swiper-item>
+    <swiper-item class="img-item">
+      <image class='cover' src='http://119.23.55.117/public/static/YSWX/images/introduce0.jpg'></image>
+      <view class='Btn1' catchtap='toUrl'>开始使用</view>
     </swiper-item>
   </swiper>
 </view>

@@ -12,6 +12,10 @@ swiper image{
   width: 750rpx;
   height: 750rpx;
 }
+swiper image.cover{
+  width: 750rpx;
+  height: 1060rpx;
+}
 .info{
   display: flex;
   flex-direction: column;
@@ -34,4 +38,16 @@ swiper image{
 }
 .swiper-box .wx-swiper-dot{ 
     margin-left: 40rpx;
+}
+.Btn1{
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  margin-top: 80rpx;
+  background-color: #1de9b6;
+  padding: 10rpx 30rpx;
+  border-radius: 34rpx;
 }
