@@ -1,0 +1,35 @@
+<view>
+  <view class='title'>摘要</view>
+  <view class='header-info'>
+    <view class='ranking'>
+      <view class='h1'>第11名</view>
+      <view class='p'>本周总体评价</view>
+    </view>
+    <view class='advance'>
+      <view class='h1'>进步5名</view>
+      <view class='p'>本周总体评价</view>
+    </view>
+  </view>
+</view>
+<view class='list'>
+    <view class='list-item'>
+      <view>
+        <text>雷达图</text>
+      </view>
+    </view>
+    <view class='cavens list-item'>
+      <ec-canvas id="mychart-dom-graph" canvas-id="mychart-graph" ec="{{ ec2 }}"></ec-canvas>
+    </view>
+    <view class='list-item'>
+      <view>
+        <text class='f14'>打分详情</text>
+      </view>
+      <icon class='icon_right'></icon>
+    </view>
+  </view>
+  <view>
+    <view class='title'>趋势图</view>
+    <view class='cavens'>
+      <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+    </view>
+  </view>

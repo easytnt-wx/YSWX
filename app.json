@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/index/index",
     "pages/report/reportDetail/reportDetail",
+    "pages/index/index",
     "pages/report/scoreDetaill/scoreDetail",
     "pages/report/scoreTopList/scoreTopList",
     "pages/addItem/giveTab/giveTab",

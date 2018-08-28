@@ -1,5 +1,8 @@
 {
   "navigationBarBackgroundColor": "#1dc5e9",
   "navigationBarTextStyle": "white",
-  "navigationBarTitleText": "贝贝-学生报告"
+  "navigationBarTitleText": "贝贝-学生报告",
+  "usingComponents": {
+    "ec-canvas": "/ec-canvas/ec-canvas"
+  }
 }

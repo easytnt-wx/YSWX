@@ -1,0 +1,117 @@
+page{
+  background-color: #f8fcfd;
+}
+.title{
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #999;
+  font-size: 14px;
+  padding-left: 20rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.header-info{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  height: 160rpx;
+  padding: 8rpx 20rpx;
+  box-sizing: border-box;
+}
+.ranking{
+  width: 50%;
+  border-radius: 20rpx;
+  background: linear-gradient(to right, #ff9a48,#feb542);
+  color: #fff;
+  margin-right: 31rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.advance{
+  width: 50%;
+  border-radius: 20rpx;
+  background: linear-gradient(to right, #39d194,#8dd953);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.h1{
+  font-size: 22px;
+}
+.p{
+  font-size: 14px;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #fff;
+}
+.list::before,.list::after{
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  color: #e5e5e5;
+  z-index: 2;
+}
+.list::before{
+  border-top: 1rpx solid #e5e5e5;
+  top: 0;
+}
+.list::after{
+  border-bottom: 1rpx solid #e5e5e5;
+  bottom: 0;
+}
+.list-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 88rpx;
+  margin-left: 30rpx;
+  position: relative;
+}
+.list-item::before{
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #e5e5e5;
+  color: #e5e5e5;
+  z-index: 2;
+}
+.list-item > view{
+  display: flex;
+  align-items: center;
+}
+.list-item > view > text{
+  color: #999;
+  font-size: 12px;
+}
+.icon_right{
+  width: 25rpx;
+  height: 25rpx;
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_right.png");
+  background-size: cover;
+  margin-right: 30rpx;
+}
+.list-item > view > text.f14{
+  font-size: 14px;
+  color: #049af5;
+}
+.cavens{
+  height: 600rpx;
+  background-color: #fff;
+}
+#mychart-dom-line{
+  height: 100%;
+  width: 100%;
+}
+#mychart-dom-graph{
+  height: 100%;
+  width: 100%;
+}
