@@ -1,4 +1,4 @@
-import * as echarts from '../../../ec-canvas/echarts';
+import * as echarts from '../../ec-canvas/echarts';
 const app = getApp();
 function initChart2(canvas, width, height) {
   const chart = echarts.init(canvas, null, {
@@ -43,20 +43,17 @@ function initChart2(canvas, width, height) {
         max: 500
       }
       ],
-      splitNumber:3,
-      axisLine:{
-        show:false
+      splitNumber: 3,
+      axisLine: {
+        show: false
       },
-      splitLine:{
-        show:true,
-        lineStyle:{
-          opacity:0
-        }
+      splitLine: {
+        show: false
       },
-      splitArea:{
-        show:true,
+      splitArea: {
+        show: true,
         areaStyle:{
-          color: ['#e3f8ea', '#fff']
+          color: ['#e3f8ea','#fff']
         }
       }
     },
@@ -67,14 +64,14 @@ function initChart2(canvas, width, height) {
         value: [400, 300, 500, 300, 409, 400],
         name: '预算'
       }],
-      itemStyle:{
-        opacity:0
+      itemStyle: {
+        opacity: 0
       },
-      lineStyle:{
-        opacity:0
+      lineStyle: {
+        opacity: 0
       },
-      areaStyle:{
-        color:{
+      areaStyle: {
+        color: {
           type: 'linear',
           x: 0,
           y: 0,
@@ -87,7 +84,7 @@ function initChart2(canvas, width, height) {
           }],
           globalCoord: false // 缺省为 false
         },
-        opacity:1
+        opacity: 1
       }
     }]
   };
@@ -114,11 +111,11 @@ function initChart(canvas, width, height) {
       type: 'category',
       boundaryGap: false,
       data: ['周', '月', '季度', '年'],
-      axisLine:{
-        show:false
+      axisLine: {
+        show: false
       },
-      axisTick:{
-        show:false
+      axisTick: {
+        show: false
       },
     },
     yAxis: {
@@ -135,17 +132,17 @@ function initChart(canvas, width, height) {
       axisTick: {
         show: false
       },
-      splitLine:{
-        type:'solid'
+      splitLine: {
+        type: 'solid'
       },
-      minInterval:5
+      minInterval: 5
       // show: false
     },
     visualMap: {
       show: false,
       dimension: 0,
       pieces: [{
-        gt:0,
+        gt: 0,
         lte: 1,
         color: '#f44236'
       }, {
@@ -163,22 +160,22 @@ function initChart(canvas, width, height) {
       type: 'line',
       smooth: false,
       data: [3, 12, 9, 17],
-      lineStyle:{
-        width:3
+      lineStyle: {
+        width: 3
       },
       symbol: 'circle',
       symbolSize: 10,
-      markPoint:{
+      markPoint: {
         data: [{
           type: 'max',
           name: '最大值',
           symbol: 'roundRect',
           symbolSize: [45, 30],
           symbolOffset: [0, -21],
-          itemStyle:{
-            color:'#a389d3'
+          itemStyle: {
+            color: '#a389d3'
           }
-          }]
+        }]
       }
     }]
   };
@@ -189,7 +186,7 @@ function initChart(canvas, width, height) {
 
 Page({
   onLoad: function (options) {
-    
+
   },
 
 

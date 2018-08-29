@@ -1,0 +1,38 @@
+<view class='container'>
+  <view class='header'>
+    <view class='header-info'>
+      <image src='http://119.23.55.117/public/static/YSWX/images/icon_student.png'></image>
+      <view>
+        <view class='name'>
+          <view>贝贝</view>
+          <view class='icon-drop'></view>
+        </view>
+        <view class='school-name'>石桥中学</view>
+      </view>
+    </view>
+    <view class='panel'>
+      <view class='left'>
+        <view class='title'>本周总体评价</view>
+        <view class='p'>第20名</view>
+      </view>
+      <view class='right'>
+        <view class='title'>本周总体评价</view>
+        <view class='p'>进步3名</view>
+      </view>
+    </view>
+  </view>
+  <view class='body'>
+    <view>
+      <view class='title2'>雷达图</view>
+      <view class='cavens'>
+        <ec-canvas id="mychart-dom-graph" canvas-id="mychart-graph" ec="{{ ec2 }}"></ec-canvas>
+      </view>
+    </view>
+    <view>
+      <view class='title2'>趋势图</view>
+      <view class='cavens'>
+        <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+      </view>
+    </view>
+  </view>
+</view>

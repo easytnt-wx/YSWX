@@ -1,0 +1,149 @@
+page{
+  background-color: #f8fcfd;
+}
+.header{
+  height: 386rpx;
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_studentBackgroud.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.header-info image{
+  width: 96rpx;
+  height: 96rpx;
+  margin-right: 20rpx;
+}
+.header-info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 96rpx;
+  padding-left: 40rpx;
+  padding-top: 35rpx;
+}
+.name{
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.icon-drop{
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_drop.png");
+  width: 24rpx;
+  height: 24rpx;
+  background-size: cover;
+  margin-left: 16rpx;
+}
+.school-name{
+  font-size: 14px;
+  color: #fff;
+}
+.panel{
+  margin: 35rpx 40rpx 0 40rpx;
+  background-color: #fff;
+  height: 220rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 10rpx 40rpx 0 #eee;
+  display: flex;
+  text-align: center;
+}
+.left,.right{
+  flex: auto;
+}
+.panel .title{
+  font-size: 14px;
+  color: #c9d1d0;
+  margin-top: 33rpx;
+}
+.p{
+  color: #3e4b4b;
+  font-size: 22px;
+  line-height: 100rpx;
+  margin-top: 20rpx;
+}
+.left .p{
+  border-right: 1rpx solid #e5e5e5;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #fff;
+}
+.list::before,.list::after{
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  color: #e5e5e5;
+  z-index: 2;
+}
+.list::before{
+  border-top: 1rpx solid #e5e5e5;
+  top: 0;
+}
+.list::after{
+  border-bottom: 1rpx solid #e5e5e5;
+  bottom: 0;
+}
+.list-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 88rpx;
+  margin-left: 30rpx;
+  position: relative;
+}
+.list-item::before{
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #e5e5e5;
+  color: #e5e5e5;
+  z-index: 2;
+}
+.list-item > view{
+  display: flex;
+  align-items: center;
+}
+.list-item > view > text{
+  color: #999;
+  font-size: 12px;
+}
+.icon_right{
+  width: 25rpx;
+  height: 25rpx;
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_right.png");
+  background-size: cover;
+  margin-right: 30rpx;
+}
+.list-item > view > text.f14{
+  font-size: 14px;
+  color: #049af5;
+}
+.cavens{
+  height: 600rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+#mychart-dom-line{
+  height: 100%;
+  width: 100%;
+}
+#mychart-dom-graph{
+  height: 100%;
+  width: 100%;
+}
+.title2{
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #3e4b4b;
+  font-size: 18px;
+  padding-left: 20rpx;
+}

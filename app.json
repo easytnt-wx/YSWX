@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/myreport/myreport",
     "pages/report/reportDetail/reportDetail",
     "pages/index/index",
     "pages/report/scoreDetaill/scoreDetail",
