@@ -7,15 +7,22 @@
     </view>
     <view class='form-group'>
       <label>学校</label>
-      <picker mode="selector" bindchange="selectSchool" value="{{schoolIndex}}" range="{{schoolArray}}">
-        <view><input disabled class='number' placeholder='请选择学校' value='{{schoolArray[schoolIndex]}}'></input></view>
+      <picker mode="selector" bindchange="selectSchool" value="{{schoolIndex}}" range="{{schoolArray}}" range-key="{{'name'}}">
+        <view><input disabled class='number' placeholder='请选择学校' value='{{schoolArray[schoolIndex].name}}'></input></view>
+      </picker>
+      <icon class="icon-dropDown"></icon>
+    </view>
+    <view class='form-group'>
+      <label>年级</label>
+      <picker mode="selector" bindchange="selectGrades" value="{{gradesIndex}}" range="{{gradesArray}}" range-key="{{'name'}}">
+        <view><input class='number' disabled placeholder='请选择年级' type='text' value='{{gradesArray[gradesIndex].name}}'></input></view>
       </picker>
       <icon class="icon-dropDown"></icon>
     </view>
     <view class='form-group'>
       <label>班级</label>
-      <picker mode="selector" bindchange="selectClass" value="{{classIndex}}" range="{{classArray}}">
-        <view><input class='number' disabled placeholder='请选择班级' type='text' value='{{classArray[classIndex]}}'></input></view>
+      <picker mode="selector" bindchange="selectClass" value="{{classIndex}}" range="{{classArray}}" range-key="{{'name'}}">
+        <view><input class='number' disabled placeholder='请选择班级' type='text' value='{{classArray[classIndex].name}}'></input></view>
       </picker>
       <icon class="icon-dropDown"></icon>
     </view>

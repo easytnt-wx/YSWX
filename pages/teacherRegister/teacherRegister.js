@@ -5,14 +5,42 @@ Page({
    * 页面的初始数据
    */
   data: {
-    schoolArray :["深圳市第一高级中学","深圳市红岭中学","深圳市光明中学","深圳大学第一附属中学"],
-    classArray: ["六年级1班","六年级2班","六年级3班","六年级4班","六年级5班","六年级6班"],
+    schoolArray: [],
+    gradesArray: [],
+    classArray: [],
     schoolIndex:0,
-    classIndex:0
+    gradesIndex:0,
+    classIndex:0,
+    schoolId: '',
+    level: ''
   },
   selectSchool:function(e){
+    var that = this;
+    that.setData({
+      schoolIndex : e.detail.value,
+      schoolId: that.data.schoolArray[e.detail.value].schoolId,
+      gradesArray: that.data.schoolArray[e.detail.value].grades
+    });
+  },
+  selectGrades: function (e) {
+    var that = this;
     this.setData({
-      schoolIndex : e.detail.value
+      gradesIndex: e.detail.value,
+      level: that.data.gradesArray[e.detail.value].level
+    });
+    console.log(that.data.level);
+    wx.request({
+      url: 'https://www.tfkclass.com/ysyp/clazz/grade/' + that.data.schoolId + '/' + that.data.level,
+      dataType: 'json',
+      responseType: 'text',
+      success: function (res) {
+        var _classdata = res.data;
+        if (_classdata.status.success == true) {
+          that.setData({
+            'classArray': _classdata.clazzes
+          })
+        }
+      }
     })
   },
   selectClass: function (e) {
@@ -30,14 +58,47 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var _page = 1;
+    var _num = 10;
+    var that = this;
+    wx.request({
+      url: 'https://www.tfkclass.com/ysyp/school/'+ _page + '/' + _num,
+      dataType:'json',
+      responseType:'text',
+      success:function(res){
+        var _data = res.data;
+        if(_data.status.success == true){
+          that.setData({
+            'schoolArray' :_data.schools,
+            'schoolId': _data.schools[0].schoolId,
+            'gradesArray': _data.schools[0].grades,
+            'level': _data.schools[0].grades[0].level
+          });
+          wx.request({
+            url: 'https://www.tfkclass.com/ysyp/clazz/grade/' + that.data.schoolId + '/' + that.data.level,
+            dataType:'json',
+            responseType: 'text',
+            success:function(res){
+              var _classdata = res.data;
+              if(_classdata.status.success == true){
+                that.setData({
+                  'classArray': _classdata.clazzes
+                })
+              }
+            }
+          })
+        }
+
+      }
+    })
+    
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    
   },
 
   /**

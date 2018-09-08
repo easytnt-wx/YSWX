@@ -1,8 +1,9 @@
 {
   "pages":[
+    "pages/teacherRegister/teacherRegister",
+    "pages/index/index",
     "pages/myreport/myreport",
     "pages/report/reportDetail/reportDetail",
-    "pages/index/index",
     "pages/report/scoreDetaill/scoreDetail",
     "pages/report/scoreTopList/scoreTopList",
     "pages/addItem/giveTab/giveTab",
@@ -13,7 +14,7 @@
     "pages/addItem/additem",
     "pages/report/report",
     "pages/myself/myself",
-    "pages/teacherRegister/teacherRegister",
+    
     "pages/registerMoble/registerMoble",
     "pages/selectRole/selectRole",
     "pages/logs/logs"
