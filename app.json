@@ -1,6 +1,6 @@
 {
   "pages":[
-    "pages/teacherRegister/teacherRegister",
+    "pages/addItem/additem",
     "pages/index/index",
     "pages/myreport/myreport",
     "pages/report/reportDetail/reportDetail",
@@ -11,10 +11,10 @@
     "pages/parentSelf/parentSelf",
     "pages/myself/setting/setting",
     "pages/myself/about/about",
-    "pages/addItem/additem",
+    
     "pages/report/report",
     "pages/myself/myself",
-    
+    "pages/teacherRegister/teacherRegister",
     "pages/registerMoble/registerMoble",
     "pages/selectRole/selectRole",
     "pages/logs/logs"

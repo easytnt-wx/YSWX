@@ -12,7 +12,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var _title = options.name;
+    wx.setNavigationBarTitle({
+      title: '点评' + _title
+    })
   },
   //滑动切换
   swiperTab: function (e) {

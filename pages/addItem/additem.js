@@ -5,11 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    schoolId: 'SCH691b72f2f8c04d23a3389eb972dc9613',
+    clazzId: 'CLAdb685a744d61409797b39895d871e3b3',
+    studentsList: []
   },
   toUrl: function(e){
+    var stuName = e.currentTarget.dataset.name;
     wx.navigateTo({
-      url: 'giveTab/giveTab',
+      url: 'giveTab/giveTab?name=' + stuName
     })
   },
 
@@ -17,7 +20,21 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that = this;
+    wx.request({
+      url: 'https://www.tfkclass.com/ysyp/student/list/clazz/nameSorted/' + that.data.schoolId + '/' + that.data.clazzId,
+      dataType: 'json',
+      responseType: 'text',
+      success: function (res) {
+        var stuList = res.data;
+        if(stuList.status.success == true){
+          that.setData({
+            studentsList: stuList.students
+          })
+        };
+        console.log(that.data.studentsList)
+      }
+    })
   },
 
   /**
