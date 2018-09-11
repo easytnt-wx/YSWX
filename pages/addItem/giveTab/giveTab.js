@@ -35,8 +35,8 @@ Page({
       url: 'https://www.tfkclass.com/ysyp/assess/teacher/to/student',
       data:{
         schoolId: that.data.schoolId,
-        teacherId : that.data.teacherId,
-        studentId: that.data.studentId
+        teacherPersonId : that.data.teacherId,
+        studentPersonId: that.data.studentId
       },
       success:function(res){
         var giveScoreList = res.data;
@@ -51,13 +51,6 @@ Page({
       }
     })
 
-  },
-  //滑动切换
-  swiperTab: function (e) {
-    var that = this;
-    that.setData({
-      currentTab: e.detail.current
-    });
   },
   //点击切换
   clickTab: function (e) {
@@ -91,9 +84,12 @@ Page({
   },
   wzdp:function(e){
     var _infp = e.detail.value;
-    this.setData({
-      word: _infp
-    });
+    if(_infp != ''){
+      this.setData({
+        'word': _infp
+      })
+    }
+    
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -137,26 +133,31 @@ Page({
         _existScore.push(_b);
       }
     }
-    var _word = {
-      'word': that.data.word
-    }
-    _existScore.push(_word);
-    that.setData({
-      assesses: _existScore
-    });
-    wx.request({
-      url: 'https://www.tfkclass.com/ysyp/assess/teacher/to/student',
-      data:{
-        "schoolId": that.data.schoolId,
-        "teacherPersonId": that.data.teacherId,
-        "studentPersonId": that.data.studentId,
-        "assesses": that.data.assesses
-      },
-      method: 'POST',
-      success:function(res){
-        console.log(res.data);
+    if(that.data.word != ''){
+      var _word = {
+        'word': that.data.word
       }
-    })
+      _existScore.push(_word);
+    };
+    console.log(_existScore);
+    if (_existScore.length > 0){
+      that.setData({
+        assesses: _existScore
+      });
+      wx.request({
+        url: 'https://www.tfkclass.com/ysyp/assess/teacher/to/student',
+        data: {
+          "schoolId": that.data.schoolId,
+          "teacherPersonId": that.data.teacherId,
+          "studentPersonId": that.data.studentId,
+          "assesses": that.data.assesses
+        },
+        method: 'POST',
+        success: function (res) {
+          console.log(res.data);
+        }
+      })
+    }
   },
 
   /**

@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/addItem/additem",
     "pages/index/index",
+    "pages/addItem/additem",
     "pages/myreport/myreport",
     "pages/report/reportDetail/reportDetail",
     "pages/report/scoreDetaill/scoreDetail",

@@ -3,13 +3,6 @@ page{
   flex-direction: column;
   height: 100%;
 }
-swiper{
-  flex: auto;
-  overflow: auto;
-}
-swiper-item{
-  overflow: auto;
-}
 .swiper-tab{
     width: 100%;
     border-bottom: 1rpx solid #e5e5e5;
@@ -29,6 +22,10 @@ swiper-item{
 .active{
     color:#3e4b4b;
     border-bottom: 4rpx solid #01e6ad;
+}
+.swiper-item{
+  flex: auto;
+  overflow: auto;
 }
 .grades{
   display: flex;
@@ -174,6 +171,7 @@ swiper-item{
   height: 100%;
   padding: 30rpx;
   box-sizing: border-box;
+  position: relative;
 }
 textarea{
   width: 100%;
