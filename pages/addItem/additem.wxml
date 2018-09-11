@@ -2,7 +2,7 @@
   <view wx:for="{{studentsList}}" wx:for-item="i" wx:key="letter">
     <view class='indexTitle'>{{i.letter}}</view>
     <view class='list'>
-      <view class='userInfo' catchtap='toUrl'  wx:for="{{i.students}}" wx:for-item='j' wx:key="name" data-name="{{j.name}}">
+      <view class='userInfo' catchtap='toUrl'  wx:for="{{i.students}}" wx:for-item='j' wx:key="name" data-name="{{j.name}}" data-studentid='{{j.personId}}'>
         <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
         <text>{{j.name}}</text>
       </view>

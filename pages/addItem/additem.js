@@ -7,12 +7,15 @@ Page({
   data: {
     schoolId: 'SCH691b72f2f8c04d23a3389eb972dc9613',
     clazzId: 'CLAdb685a744d61409797b39895d871e3b3',
+    teacherId: 'PER12343a05bc444a75ae07ad4a5606ce83',
     studentsList: []
   },
   toUrl: function(e){
     var stuName = e.currentTarget.dataset.name;
+    var studentId = e.currentTarget.dataset.studentid;
+    var that = this;
     wx.navigateTo({
-      url: 'giveTab/giveTab?name=' + stuName
+      url: 'giveTab/giveTab?name=' + stuName + '&schoolId=' + that.data.schoolId + '&teacherId=' + that.data.teacherId + '&studentId=' + studentId
     })
   },
 
@@ -32,7 +35,6 @@ Page({
             studentsList: stuList.students
           })
         };
-        console.log(that.data.studentsList)
       }
     })
   },
