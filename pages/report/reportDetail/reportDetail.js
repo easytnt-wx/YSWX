@@ -1,6 +1,9 @@
 import * as echarts from '../../../ec-canvas/echarts';
 const app = getApp();
+var optL = [];
 function initChart2(canvas, width, height) {
+  var that = this;
+  console.log(that);
   const chart = echarts.init(canvas, null, {
     width: width,
     height: height
@@ -18,31 +21,7 @@ function initChart2(canvas, width, height) {
     },
     radar: {
       shape: 'circle',
-      indicator: [{
-        name: '维度1',
-        max: 500
-      },
-      {
-        name: '维度2',
-        max: 500
-      },
-      {
-        name: '维度3',
-        max: 500
-      },
-      {
-        name: '维度4',
-        max: 500
-      },
-      {
-        name: '维度5',
-        max: 500
-      },
-      {
-        name: '维度6',
-        max: 500
-      }
-      ],
+      indicator: optL,
       splitNumber:3,
       axisLine:{
         show:false
@@ -188,10 +167,73 @@ function initChart(canvas, width, height) {
 }
 
 Page({
-  onLoad: function (options) {
-    
+  data: {
+    rank:'',
+    promote: '',
+    evaluateList: [],
+    optL: [{
+      name: '成绩优秀',
+      max: 500
+    },
+    {
+      name: '维度2',
+      max: 500
+    },
+    {
+      name: '维度3',
+      max: 500
+    },
+    {
+      name: '维度4',
+      max: 500
+    },
+    {
+      name: '维度5',
+      max: 500
+    },
+    {
+      name: '维度6',
+      max: 500
+    }
+    ],
+    ec: {
+      onInit: initChart,
+    },
+    ec2: {
+      onInit: initChart2,
+    },
   },
 
+  onLoad: function (options) {
+    var that = this;
+    var _rank = options.rank;
+    var _promote = options.promote;
+    that.setData({
+      'rank' : _rank,
+      'promote': _promote
+    });
+
+    var _schoolId = options.schoolId;
+    var _personid = options.personId;
+    wx.request({
+      url: 'https://www.tfkclass.com/ysyp/assess/list/all/' + _schoolId + '/Student/' + _personid,
+      success: function (res) {
+        var _dataList = res.data;
+        if (_dataList.status.success == true) {
+          that.setData({
+            'evaluateList' : _dataList.assesses
+          });
+          console.log(that.data.evaluateList);
+        }
+      }
+    })
+  },
+
+  toUrl: function (e) {
+    wx.navigateTo({
+      url: '../scoreDetaill/scoreDetail',
+    })
+  },
 
   onShareAppMessage: function (res) {
     return {
@@ -201,14 +243,7 @@ Page({
       fail: function () { }
     }
   },
-  data: {
-    ec: {
-      onInit: initChart,
-    },
-    ec2: {
-      onInit: initChart2,
-    },
-  },
+
 
   onReady() {
   }

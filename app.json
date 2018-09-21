@@ -1,11 +1,12 @@
 {
   "pages":[
+    "pages/report/scoreTopList/scoreTopList",
     "pages/index/index",
     "pages/addItem/additem",
     "pages/myreport/myreport",
     "pages/report/reportDetail/reportDetail",
     "pages/report/scoreDetaill/scoreDetail",
-    "pages/report/scoreTopList/scoreTopList",
+    
     "pages/addItem/giveTab/giveTab",
     "pages/parentSelf/setting/setting",
     "pages/parentSelf/parentSelf",

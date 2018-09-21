@@ -5,14 +5,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-    currentTab: 0
+    currentTab: 0,
+    clazzid: 'CLA4965b0fc508e49449734c95f7a079d14',
+    scoreList: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this;
+    wx.request({
+      url: 'https://www.tfkclass.com/ysyp/assess/rank/clazz/day/' + that.data.clazzid,
+      success:function(res){
+        var _dataList = res.data;
+        if(_dataList.status.success == true){
+          that.setData({
+            'scoreList': _dataList.ranks
+          });
+          console.log(that.data.scoreList);
+        }
+      }
+    })
   },
   //滑动切换
   swiperTab: function (e) {
@@ -33,8 +47,12 @@ Page({
     }
   },
   toUrl: function(e){
+    var rank = e.currentTarget.dataset.rank;
+    var promote = e.currentTarget.dataset.promote;
+    var schoolId = e.currentTarget.dataset.schoolid;
+    var personId = e.currentTarget.dataset.personid;
     wx.navigateTo({
-      url: '../report',
+      url: '../reportDetail/reportDetail?rank=' + rank + '&promote=' + promote + '&schoolId=' + schoolId + '&personId=' + personId,
     })
   },
   /**

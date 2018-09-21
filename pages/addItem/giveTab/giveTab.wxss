@@ -58,94 +58,88 @@ page{
   display: flex;
   justify-content: flex-end;
 }
-.INX1732763840a64405a37b210d14a46465{
+.jjjsfy{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_headUp.png")
 }
-.item-active .INX1732763840a64405a37b210d14a46465{
+.item-active .jjjsfy{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_headUp_active.png");
 }
-.INXc40b94507292431b8796bfedc7e48b6c{
+.zywcyx{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_zywc.png")
 }
-.item-active .INXc40b94507292431b8796bfedc7e48b6c{
+.item-active .zywcyx{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_zywc_active.png");
 }
-.INX667f61197d17493f90fda407f7163786{
+.ktajtj{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_ajtj.png")
 }
-.item-active .INX667f61197d17493f90fda407f7163786{
+.item-active .ktajtj{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_ajtj_active.png");
 }
-.INX667f61197d17493f90fda407f7163786{
-  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_ajtj.png")
-}
-.item-active .INX667f61197d17493f90fda407f7163786{
-  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_ajtj_active.png");
-}
-.INX3513a0cca278427da23b213922a86e1b{
+.cjyl{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_cjyl.png")
 }
-.item-active .INX3513a0cca278427da23b213922a86e1b{
+.item-active .cjyl{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_cjyl_active.png");
 }
-.INX0183877c0d83481aa67b7389f66ad34e{
+.jbmx{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_jbmx.png")
 }
-.item-active .INX0183877c0d83481aa67b7389f66ad34e{
+.item-active .jbmx{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_jbmx_active.png");
 }
-.INX55f20b859f564e6c9dd910c831f39de7{
+.rzzc{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_rzzc.png")
 }
-.item-active .INX55f20b859f564e6c9dd910c831f39de7{
+.item-active .rzzc{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_rzzc_active.png");
 }
-.INXf4088513d81044379d4dda2c78de5fd8{
+.bztx{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_team.png")
 }
-.item-active .INXf4088513d81044379d4dda2c78de5fd8{
+.item-active .bztx{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_team_active.png");
 }
-.INX6117e68c3719473fb2f1e56b035265c0{
+.kqjbh{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_kqzb.png")
 }
-.item-active .INX6117e68c3719473fb2f1e56b035265c0{
+.item-active .kqjbh{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_kqzb_active.png");
 }
-.INX9bb374c8efd249b6b8f4bf5297226298{
+.rahd{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_rayd.png")
 }
-.item-active .INX9bb374c8efd249b6b8f4bf5297226298{
+.item-active .rahd{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_rayd_active.png");
 }
-.INX84c9f924fed241a0b4de6d7b6e3d58ff{
+.ktjxh{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_jxh.png")
 }
-.item-active .INX84c9f924fed241a0b4de6d7b6e3d58ff{
+.item-active .ktjxh{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_jxh_active.png");
 }
-.INX73ea7198b9bd4caf93bd329a623ad161{
+.wtjzy{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_zywwc.png")
 }
-.item-active .INX73ea7198b9bd4caf93bd329a623ad161{
+.item-active .wtjzy{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_zywwc_active.png");
 }
-.INX89f03e202c124c95b65243204f017829{
+.cjtb{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_tbmx.png")
 }
-.item-active .INX89f03e202c124c95b65243204f017829{
+.item-active .cjtb{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_tbmx_active.png");
 }
-.INX8a582cad56c1442a93eda7bf93007b01{
+.zzdn{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_dnxx.png")
 }
-.item-active .INX8a582cad56c1442a93eda7bf93007b01{
+.item-active .zzdn{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_dnxx_active.png");
 }
-.INX59ae1df9d7bc49c4b2be74cc6bdaf1a7{
+.xwbwm{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_bwm.png")
 }
-.item-active .INX59ae1df9d7bc49c4b2be74cc6bdaf1a7{
+.item-active .xwbwm{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_bwm_active.png");
 }
 

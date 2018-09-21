@@ -5,9 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    schoolId: 'SCH691b72f2f8c04d23a3389eb972dc9613',
-    clazzId: 'CLAdb685a744d61409797b39895d871e3b3',
-    teacherId: 'PER12343a05bc444a75ae07ad4a5606ce83',
+    schoolId: 'SCH1936574f611f495d911f0cea3cb3c471',
+    clazzId: 'CLA4965b0fc508e49449734c95f7a079d14',
+    teacherId: 'PER7d71bebc033541dcadef9c7e6716f832',
     studentsList: []
   },
   toUrl: function(e){

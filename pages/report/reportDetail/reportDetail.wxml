@@ -2,11 +2,12 @@
   <view class='title'>摘要</view>
   <view class='header-info'>
     <view class='ranking'>
-      <view class='h1'>第11名</view>
+      <view class='h1'>第{{rank}}名</view>
       <view class='p'>本周总体评价</view>
     </view>
     <view class='advance'>
-      <view class='h1'>进步5名</view>
+      <view class='h1' wx:if="{{promote >= 0}}">进步{{promote}}名</view>
+      <view class='h1' wx:if="{{promote < 0}}">退步{{-promote}}名</view>
       <view class='p'>本周总体评价</view>
     </view>
   </view>
@@ -20,7 +21,7 @@
   <view class='cavens list-item'>
     <ec-canvas id="mychart-dom-graph" canvas-id="mychart-graph" ec="{{ ec2 }}"></ec-canvas>
   </view>
-  <view class='list-item'>
+  <view class='list-item' catchtap='toUrl'>
     <view>
       <text class='f14'>打分详情</text>
     </view>

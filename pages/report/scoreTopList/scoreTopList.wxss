@@ -97,7 +97,7 @@ swiper-item{
   height: 96rpx;
   text-align: center;
 }
-.list-item:nth-child(1) .scoreTop{
+/* .list-item:nth-child(1) .scoreTop{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_No1.png");
   background-size: cover;
   color: transparent;
@@ -108,6 +108,21 @@ swiper-item{
   color: transparent;
 }
 .list-item:nth-child(3) .scoreTop{
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_No3.png");
+  background-size: cover;
+  color: transparent;
+} */
+.scoreTop[data-title='1']{
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_No1.png");
+  background-size: cover;
+  color: transparent;
+}
+.scoreTop[data-title='2']{
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_No2.png");
+  background-size: cover;
+  color: transparent;
+}
+.scoreTop[data-title='3']{
   background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_No3.png");
   background-size: cover;
   color: transparent;
