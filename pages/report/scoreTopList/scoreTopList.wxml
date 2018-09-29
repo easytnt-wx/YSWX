@@ -10,7 +10,7 @@
 <swiper current="{{currentTab}}" duration="100"  bindchange="swiperTab">
     <swiper-item >
       <view class='list'>
-        <view class='list-item' data-rank='{{i.rank}}' data-promote='{{i.promote}}' data-schoolid='{{i.schoolId}}' data-personid='{{i.personId}}' hover-class='list-item-hover' catchtap='toUrl' wx:for="{{scoreList}}" wx:for-item="i" wx:key="assesseeName">
+        <view class='list-item' data-stdname='{{i.assesseeName}}' data-rank='{{i.rank}}' data-promote='{{i.promote}}' data-schoolid='{{i.schoolId}}' data-personid='{{i.personId}}' hover-class='list-item-hover' catchtap='toUrl' wx:for="{{scoreList}}" wx:for-item="i" wx:key="assesseeName">
           <view>
             <view class='scoreTop' data-title="{{i.rank}}">{{i.rank}}</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>
@@ -27,7 +27,7 @@
     </swiper-item>
     <swiper-item >
       <view class='list'>
-       <view class='list-item' data-rank='{{i.rank}}' data-promote='{{i.promote}}' data-schoolid='{{i.schoolId}}' data-personid='{{i.personId}}' hover-class='list-item-hover' catchtap='toUrl' wx:for="{{scoreList}}" wx:for-item="i" wx:key="assesseeName">
+       <view class='list-item' data-stdname='{{i.assesseeName}}' data-rank='{{i.rank}}' data-promote='{{i.promote}}' data-schoolid='{{i.schoolId}}' data-personid='{{i.personId}}' hover-class='list-item-hover' catchtap='toUrl' wx:for="{{scoreList}}" wx:for-item="i" wx:key="assesseeName">
           <view>
             <view class='scoreTop' data-title="{{i.rank}}">{{i.rank}}</view>
             <image class='user-icon' src='http://119.23.55.117/public/static/YSWX/images/stu_default.png'></image>

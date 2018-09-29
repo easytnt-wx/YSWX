@@ -1,9 +1,8 @@
 import * as echarts from '../../../ec-canvas/echarts';
 const app = getApp();
 var optL = [];
+var optS = [];
 function initChart2(canvas, width, height) {
-  var that = this;
-  console.log(that);
   const chart = echarts.init(canvas, null, {
     width: width,
     height: height
@@ -40,11 +39,11 @@ function initChart2(canvas, width, height) {
       }
     },
     series: [{
-      name: '预算 vs 开销',
+      name: '总分 vs 得分',
       type: 'radar',
       data: [{
-        value: [400, 300, 500, 300, 409, 400],
-        name: '预算'
+        value: optS,
+        name: '得分'
       }],
       itemStyle:{
         opacity:0
@@ -170,32 +169,6 @@ Page({
   data: {
     rank:'',
     promote: '',
-    evaluateList: [],
-    optL: [{
-      name: '成绩优秀',
-      max: 500
-    },
-    {
-      name: '维度2',
-      max: 500
-    },
-    {
-      name: '维度3',
-      max: 500
-    },
-    {
-      name: '维度4',
-      max: 500
-    },
-    {
-      name: '维度5',
-      max: 500
-    },
-    {
-      name: '维度6',
-      max: 500
-    }
-    ],
     ec: {
       onInit: initChart,
     },
@@ -208,6 +181,10 @@ Page({
     var that = this;
     var _rank = options.rank;
     var _promote = options.promote;
+    var _stdname = options.stdname;
+    wx.setNavigationBarTitle({
+      title: _stdname + ' - 学生报告'
+    });
     that.setData({
       'rank' : _rank,
       'promote': _promote
@@ -220,10 +197,17 @@ Page({
       success: function (res) {
         var _dataList = res.data;
         if (_dataList.status.success == true) {
-          that.setData({
-            'evaluateList' : _dataList.assesses
-          });
-          console.log(that.data.evaluateList);
+          optL.length=0;
+          optS.length=0;
+          for (var i = 0; i < _dataList.assesses.length;i++){
+            if (_dataList.assesses[i].score > 0){
+              optL.push({
+                'name': _dataList.assesses[i].indexName,
+                'max': _dataList.assesses[i].indexScore
+              });
+              optS.push(_dataList.assesses[i].score);
+            }
+          }
         }
       }
     })

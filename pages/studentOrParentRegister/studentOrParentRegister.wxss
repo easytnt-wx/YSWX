@@ -3,16 +3,16 @@
   background-color: #f8fcfd;
   font-size: 14px;
   line-height: 88rpx;
-  padding-left: 60rpx;
-  border-bottom: 1rpx solid #e5e5e5;
-  border-top: 1rpx solid #e5e5e5;
+  padding-left: 30rpx;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 .form-group{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  border-bottom: 1rpx solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   line-height: 86rpx;
 }
 .phd-color{
@@ -21,13 +21,17 @@
 .form-group label{
   color: #3e4b4b;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   padding-left: 30rpx;
+  width: 150rpx;
 }
-.form-group input{
+.form-group > input, .form-group > picker  input{
   font-size: 18px;
   color: #3e4b4b;
   width: 480rpx;
+}
+.form-group > input{
+  margin-right: 76rpx;
 }
 .Btn1{
   border-radius: 45rpx;
@@ -38,10 +42,17 @@
   background-color: #fff;
   background-size: cover;
   border: none;
-  color: #80eaea;
+  color: #fff;
 }
 .button-hover {
   background-image: url("http://119.23.55.117/public/static/YSWX/images/Btn1_active.png");
   background-color: #fff;
   color: #fff;
+}
+.icon-dropDown{
+  background-image: url("http://119.23.55.117/public/static/YSWX/images/icon_dropDown.png");
+  width: 36rpx;
+  height: 36rpx;
+  background-size: cover;
+  margin-right: 40rpx;
 }

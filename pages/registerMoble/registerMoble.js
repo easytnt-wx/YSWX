@@ -5,13 +5,42 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    applierId: '',
+    applierName:'',
+    applierPhone:''
   },
-  toUrl : function(e){
-    wx.navigateTo({
-      url: '../teacherRegister/teacherRegister',
+  formSubmit : function(e){
+    var _url = getApp().globalData.remoteSeverUrl;
+    var _openid = getApp().globalData.openid;
+    var _name = e.detail.value.name;
+    var _phone = e.detail.value.phone;
+    var that = this;
+    wx.request({
+      url: _url + '/wechat/bind',
+      method: 'POST',
+      data: {
+        "wechatOpenId": _openid,
+        "category": "Teacher",
+        "name": _name,
+        "phone": _phone
+      },
+      success:function(res){
+        var _weChats = res.data.weChats;
+        for(var i=0;i<_weChats.length;i++){
+          var weChat = _weChats[i];
+          if (weChat.role == 'Teacher'){
+            
+            wx.navigateTo({
+              url: '../teacherRegister/teacherRegister?applierId=' + weChat.personId + '&applierName=' + weChat.name + '&applierPhone='+ weChat.phone,
+            });
+          }
+        }
+      }
+
     })
+    
   },
+
 
   /**
    * 生命周期函数--监听页面加载

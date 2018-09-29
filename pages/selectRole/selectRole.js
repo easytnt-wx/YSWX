@@ -7,7 +7,7 @@ Page({
     
   },
   toUrl: function(e){
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../registerMoble/registerMoble',
     })
   },

@@ -51,8 +51,9 @@ Page({
     var promote = e.currentTarget.dataset.promote;
     var schoolId = e.currentTarget.dataset.schoolid;
     var personId = e.currentTarget.dataset.personid;
+    var stdname = e.currentTarget.dataset.stdname;
     wx.navigateTo({
-      url: '../reportDetail/reportDetail?rank=' + rank + '&promote=' + promote + '&schoolId=' + schoolId + '&personId=' + personId,
+      url: '../reportDetail/reportDetail?rank=' + rank + '&promote=' + promote + '&schoolId=' + schoolId + '&personId=' + personId + '&stdname=' + stdname,
     })
   },
   /**

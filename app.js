@@ -26,5 +26,10 @@ App({
    */
   onError: function (msg) {
     
+  },
+  globalData:{
+    remoteSeverUrl : 'https://www.tfkclass.com/ysyp',
+    openid: '',
+    sessionKey: ''
   }
 })
