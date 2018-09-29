@@ -8,11 +8,11 @@
       <view class='h2'>我是老师</view>
       <text>I am teacher</text>
     </view>
-    <view class='icon-parent'>
+    <view class='icon-parent' catchtap='toUrl2' data-category='Parent'>
       <view class='h2'>我是家长</view>
       <text>I am parent</text>
     </view>
-    <view class='icon-student'>
+    <view class='icon-student' catchtap='toUrl2' data-category='Student'>
       <view class='h2'>我是学生</view>
       <text>I am student</text>
     </view>

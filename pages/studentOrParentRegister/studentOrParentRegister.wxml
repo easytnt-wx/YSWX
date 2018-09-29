@@ -31,7 +31,7 @@
     </view>
     <view class='form-group'>
       <label>学号</label>
-      <input class='number' placeholder='请输入学号' type='number' maxlength="11" placeholder-class="phd-color" name='phone'></input>
+      <input class='number' placeholder='请输入学号' type='number' maxlength="11" placeholder-class="phd-color" name='studentNo'></input>
     </view>
     <button class='Btn1 mgtb65' formType="submit">确认</button>
   </form>

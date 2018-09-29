@@ -11,6 +11,12 @@ Page({
       url: '../registerMoble/registerMoble',
     })
   },
+  toUrl2: function (e) {
+    var category = e.currentTarget.dataset.category;
+    wx.navigateTo({
+      url: '../stdOrParentregisterMoble/stdOrParentregisterMoble?category=' + category,
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

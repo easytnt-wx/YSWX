@@ -18,7 +18,9 @@ Page({
     applierName: '',
     applierPhone: '',
     classStdList: [],
-    personId: ''
+    personId: '',
+    name : '',
+    category: ''
   },
   selectSchool: function (e) {
     var that = this;
@@ -61,22 +63,35 @@ Page({
   selectPerson:function(e){
     var that = this;
     this.setData({
-      'personId': that.data.classStdList[e.detail.value].personId
+      'personId': that.data.classStdList[e.detail.value].personId,
+      'name': that.data.classStdList[e.detail.value].name
     });
     console.log(this.data.personId);
+    console.log(this.data.name);
   },
   formSubmit: function (e) {
     var that = this;
     var _url = getApp().globalData.remoteSeverUrl;
+    var _openid = getApp().globalData.openid;
+    var _studentNo = e.detail.value.studentNo;
     wx.request({
-      url: _url + '/apply/school',
+      url: _url + '/wechat/apply/follower',
       method: 'POST',
       data: {
-        "applyingSchoolId": that.data.applyingSchoolId,
-        "applyingClazzId": that.data.applyingClazzId,
-        "applierId": that.data.applierId,
-        "applierName": that.data.applierName,
-        "applierPhone": that.data.applierPhone
+        "code": "",           
+        "wechatOpenId": _openid,
+        "category": that.data.category,
+        "name": that.data.applierName,
+        "phone": that.data.applierPhone,
+        "followers": [{
+          "name": that.data.name,
+          "studentNo": _studentNo,
+          "schoolId": that.data.applyingSchoolId,
+          "clazzId": that.data.applyingClazzId,
+          "personId": that.data.personId,
+          "gender": "Unkow",
+          "cause": ""
+        }]
       },
       success: function (res) {
 
@@ -97,7 +112,8 @@ Page({
     that.setData({
       'applierId': options.applierId,
       'applierName': options.applierName,
-      'applierPhone': options.applierPhone
+      'applierPhone': options.applierPhone,
+      'category': options.category
     })
     var _page = 1;
     var _num = 10;
@@ -134,8 +150,11 @@ Page({
                   var _classStdList = res.data;
                   if (_classStdList.status.success){
                     that.setData({
-                      'classStdList': _classStdList.students
+                      'classStdList': _classStdList.students,
+                      'personId': _classStdList.students[0].personId,
+                      'name': _classStdList.students[0].name
                     })
+                    console.log(that.data);
                   }
                 }
               })

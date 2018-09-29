@@ -1,9 +1,8 @@
 {
   "pages":[
-    "pages/studentOrParentRegister/studentOrParentRegister",
-    "pages/addItem/additem",
     "pages/index/index",
-    
+    "pages/addItem/additem",
+    "pages/studentOrParentRegister/studentOrParentRegister",
     "pages/myreport/myreport",
     "pages/report/reportDetail/reportDetail",
     "pages/report/scoreDetaill/scoreDetail",
@@ -16,7 +15,7 @@
     "pages/report/report",
     "pages/myself/myself",
     "pages/teacherRegister/teacherRegister",
-    
+    "pages/stdOrParentregisterMoble/stdOrParentregisterMoble",
     "pages/registerMoble/registerMoble",
     "pages/selectRole/selectRole",
     "pages/logs/logs"

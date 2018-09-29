@@ -28,7 +28,7 @@ App({
     
   },
   globalData:{
-    remoteSeverUrl : 'https://www.tfkclass.com/ysyp',
+    remoteSeverUrl : 'http://192.168.1.108:8081/ysyp',
     openid: '',
     sessionKey: ''
   }
