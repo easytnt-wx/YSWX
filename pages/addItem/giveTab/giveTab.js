@@ -23,6 +23,7 @@ Page({
     var _teacherid = options.teacherId;
     var _studentid = options.studentId;
     var that = this;
+    var _url = getApp().globalData.remoteSeverUrl;
     that.setData({
       schoolId: _schoolid,
       teacherId: _teacherid,
@@ -32,10 +33,10 @@ Page({
       title: '点评' + _title
     });
     wx.request({
-      url: 'https://www.tfkclass.com/ysyp/assess/teacher/to/student',
+      url: _url + '/assess/teacher/to/student',
       data:{
-        schoolId: that.data.schoolId,
-        teacherPersonId : that.data.teacherId,
+        schoolId: getApp().globalData.schoolId,
+        teacherPersonId: getApp().globalData.personId,
         studentPersonId: that.data.studentId
       },
       success:function(res){
@@ -116,6 +117,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
+    var _url = getApp().globalData.remoteSeverUrl;
     var that = this;
     var _existScore = [];
     for(var i=0;i<that.data.giveList.length;i++){
@@ -145,10 +147,10 @@ Page({
         assesses: _existScore
       });
       wx.request({
-        url: 'https://www.tfkclass.com/ysyp/assess/teacher/to/student',
+        url: _url + '/assess/teacher/to/student',
         data: {
-          "schoolId": that.data.schoolId,
-          "teacherPersonId": that.data.teacherId,
+          "schoolId": getApp().globalData.schoolId,
+          "teacherPersonId": getApp().globalData.personId,
           "studentPersonId": that.data.studentId,
           "assesses": that.data.assesses
         },

@@ -1,8 +1,8 @@
 <view>
   <view class='userInfo'>
     <image src='http://119.23.55.117/public/static/YSWX/images/icon_teacher.png'></image>
-    <view class='teacherName'>熊老师</view>
-    <view class='className'>华师中学七年级二班</view>
+    <view class='teacherName'>{{name}}</view>
+    <view class='className'>{{schoolName}}{{gradeName}}{{clazzName}}</view>
   </view>
   <view class='list'>
     <view class='list-item' catchtap='toUrl'>

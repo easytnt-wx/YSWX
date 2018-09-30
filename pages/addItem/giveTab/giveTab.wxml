@@ -19,7 +19,7 @@
   <view hidden='{{currentTab==1?false:true}}'>
     <view class='grades'>
       <view class='grade-item' wx:for='{{giveList}}' wx:for-item='i' wx:if='{{!i.plus}}' wx:key="{{indexId}}">
-        <view class='item-box' hover-class="item-active" catchtap='clickScore' data-index="{{index}}" data-maxscore='{{i.score}}' data-indexid='{{i.indexId}}'>
+        <view class='item-box' hover-class="item-active" catchtap='clickScore' data-index="{{index}}" data-maxscore='{{-i.score}}' data-indexid='{{i.indexId}}'>
           <view class='item-logo {{i.recommendIcon}}'>
             <view class='icon-badag' wx:if="{{i.defaultScore == 0?false:true}}">{{i.defaultScore}}</view>
           </view>

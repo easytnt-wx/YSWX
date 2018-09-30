@@ -24,8 +24,8 @@
     </view>
     <view class='form-group'>
       <label>关注者</label>
-      <picker mode="selector" bindchange="selectPerson" value="{{classIndex}}" range="{{classStdList}}" range-key="{{'name'}}">
-        <view><input class='number' disabled placeholder='请选择' type='text' value='{{classStdList[classIndex].name}}'></input></view>
+      <picker mode="selector" bindchange="selectPerson" value="{{personIndex}}" range="{{classStdList}}" range-key="{{'name'}}">
+        <view><input class='number' disabled placeholder='请选择' type='text' value='{{classStdList[personIndex].name}}'></input></view>
       </picker>
       <icon class="icon-dropDown"></icon>
     </view>

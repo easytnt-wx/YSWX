@@ -69,7 +69,9 @@ Page({
         "applierPhone": that.data.applierPhone
       },
       success: function (res) {
-        
+        wx.redirectTo({
+          url: '../check/check',
+        })
       }
 
     })

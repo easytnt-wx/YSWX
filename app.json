@@ -2,6 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/addItem/additem",
+    "pages/check/check",
     "pages/studentOrParentRegister/studentOrParentRegister",
     "pages/myreport/myreport",
     "pages/report/reportDetail/reportDetail",

@@ -14,6 +14,22 @@ Page({
     var _openid = getApp().globalData.openid;
     var _name = e.detail.value.name;
     var _phone = e.detail.value.phone;
+    if(_name.length == 0){
+      wx.showToast({
+        title: '请输入姓名',
+        icon: 'error',
+        duration: 2000
+      });
+      return;
+    };
+    if (!(/^[1][3,4,5,7,8,9][0-9]{9}$/.test(_phone))) {
+      wx.showToast({
+        title: '请输入手机号码',
+        icon: 'error',
+        duration: 2000
+      });
+      return;
+    };
     var that = this;
     wx.request({
       url: _url + '/wechat/bind',

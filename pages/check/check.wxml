@@ -1,0 +1,6 @@
+<view class='container'>
+  <view class='nodata'>
+    <image src='http://119.23.55.117/public/static/YSWX/images/icon_check.png'></image>
+    <text>您提交的信息已发送,请等待审核</text>
+  </view>
+</view>

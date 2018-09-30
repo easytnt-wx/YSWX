@@ -6,7 +6,7 @@ Page({
    */
   data: {
     currentTab: 0,
-    clazzid: 'CLA4965b0fc508e49449734c95f7a079d14',
+    clazzid: '',
     scoreList: []
   },
 
@@ -15,8 +15,12 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
+    that.setData({
+      'clazzid': getApp().globalData.clazzId
+    });
+    var _url = getApp().globalData.remoteSeverUrl;
     wx.request({
-      url: 'https://www.tfkclass.com/ysyp/assess/rank/clazz/day/' + that.data.clazzid,
+      url: _url + '/assess/rank/clazz/day/' + that.data.clazzid,
       success:function(res){
         var _dataList = res.data;
         if(_dataList.status.success == true){

@@ -169,6 +169,8 @@ Page({
   data: {
     rank:'',
     promote: '',
+    schoolId:'',
+    personId: '',
     ec: {
       onInit: initChart,
     },
@@ -182,18 +184,22 @@ Page({
     var _rank = options.rank;
     var _promote = options.promote;
     var _stdname = options.stdname;
+    var _schoolId = options.schoolId;
+    var _personid = options.personId;
     wx.setNavigationBarTitle({
       title: _stdname + ' - 学生报告'
     });
     that.setData({
       'rank' : _rank,
-      'promote': _promote
+      'promote': _promote,
+      'schoolId': _schoolId,
+      'personId': _personid
     });
 
-    var _schoolId = options.schoolId;
-    var _personid = options.personId;
+    
+    var _url = getApp().globalData.remoteSeverUrl;
     wx.request({
-      url: 'https://www.tfkclass.com/ysyp/assess/list/all/' + _schoolId + '/Student/' + _personid,
+      url: _url + '/assess/list/all/' + _schoolId + '/Student/' + _personid,
       success: function (res) {
         var _dataList = res.data;
         if (_dataList.status.success == true) {
@@ -214,8 +220,9 @@ Page({
   },
 
   toUrl: function (e) {
+    var that = this;
     wx.navigateTo({
-      url: '../scoreDetaill/scoreDetail',
+      url: '../scoreDetaill/scoreDetail?schoolId=' + that.data.schoolId + '&personId=' + that.data.personId,
     })
   },
 

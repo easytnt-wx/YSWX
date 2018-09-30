@@ -5,9 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    schoolId: 'SCH1936574f611f495d911f0cea3cb3c471',
-    clazzId: 'CLA4965b0fc508e49449734c95f7a079d14',
-    teacherId: 'PER7d71bebc033541dcadef9c7e6716f832',
+    schoolId: '',
+    clazzId: '',
+    teacherPersonId: '',
     studentsList: []
   },
   toUrl: function(e){
@@ -15,7 +15,7 @@ Page({
     var studentId = e.currentTarget.dataset.studentid;
     var that = this;
     wx.navigateTo({
-      url: 'giveTab/giveTab?name=' + stuName + '&schoolId=' + that.data.schoolId + '&teacherId=' + that.data.teacherId + '&studentId=' + studentId
+      url: 'giveTab/giveTab?name=' + stuName + '&schoolId=' + that.data.schoolId + '&teacherId=' + that.data.teacherPersonId + '&studentId=' + studentId
     })
   },
 
@@ -24,19 +24,27 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    wx.request({
-      url: 'https://www.tfkclass.com/ysyp/student/list/clazz/nameSorted/' + that.data.schoolId + '/' + that.data.clazzId,
-      dataType: 'json',
-      responseType: 'text',
-      success: function (res) {
-        var stuList = res.data;
-        if(stuList.status.success == true){
-          that.setData({
-            studentsList: stuList.students
-          })
-        };
-      }
-    })
+    var personId = getApp().globalData.personId;
+    var _url = getApp().globalData.remoteSeverUrl;
+    var _openId = getApp().globalData.openid;
+    getNameSorted(getApp().globalData.schoolId, getApp().globalData.clazzId);
+    function getNameSorted(s,c){
+      wx.request({
+        url:  _url + '/student/list/clazz/nameSorted/' + s + '/' + c,
+        dataType: 'json',
+        responseType: 'text',
+        success: function (res) {
+          var stuList = res.data;
+          if (stuList.status.success == true) {
+            that.setData({
+              studentsList: stuList.students
+            })
+          };
+        }
+      })
+    };
+    
+    
   },
 
   /**

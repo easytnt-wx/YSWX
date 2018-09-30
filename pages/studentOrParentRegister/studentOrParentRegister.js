@@ -11,6 +11,7 @@ Page({
     schoolIndex: 0,
     gradesIndex: 0,
     classIndex: 0,
+    personIndex: 0,
     applyingSchoolId: '',
     applyingClazzId: '',
     level: '',
@@ -57,14 +58,16 @@ Page({
   selectClass: function (e) {
     var that = this;
     this.setData({
-      'applyingClazzId': that.data.classArray[e.detail.value].clazzId
+      'applyingClazzId': that.data.classArray[e.detail.value].clazzId,
+      'classIndex': e.detail.value
     });
   },
   selectPerson:function(e){
     var that = this;
     this.setData({
       'personId': that.data.classStdList[e.detail.value].personId,
-      'name': that.data.classStdList[e.detail.value].name
+      'name': that.data.classStdList[e.detail.value].name,
+      'personIndex': e.detail.value
     });
     console.log(this.data.personId);
     console.log(this.data.name);
